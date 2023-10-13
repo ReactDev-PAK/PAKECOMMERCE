@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import {FaUserTie } from 'react-icons/fa';
 import Layout from '../../../components/layout/Layout';
 import MyContext from '../../../context/myContext';
+import DashboardTab from './ DashboardTab';
 
 function Dashboard() {
     const context = useContext(MyContext)
@@ -50,6 +51,7 @@ function Dashboard() {
                 </div>
             </div>
         </section>
+        <DashboardTab/>
     </Layout>
   )
 }
