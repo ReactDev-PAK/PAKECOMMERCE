@@ -11,6 +11,7 @@ import Order from './pages/order/Order';
 import Dashboard from './pages/admin/dashboard/Dashboard';
 import Cart from "./pages/cart/Cart"
 import Mystate from './context/myState';
+import Allproducts from './pages/all products/Allproducts';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           < Route path="/cart" element={<Cart/>}/>
           < Route path="/dashboard" element={<Dashboard/>}/>
           < Route path="/*" element={<Nopage/>} />
+          < Route path='/allproducts' element={<Allproducts/>}/>
         </Routes>
       </Router>
     </Mystate>
