@@ -68,3 +68,51 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Install Tailwind
+
+npm install -D tailwindcss postcss autoprefixer
+
+### Create Post Css COnfig js file
+
+npx tailwindcss init -p
+
+#### \***\*Configure your template paths\*\***
+
+Add the paths to all of your template files in your tailwind.config.js file.
+
+/** @type {import('tailwindcss').Config} \*/
+export default {
+content: [
+"./index.html",
+"./src/**/\*.{js,ts,jsx,tsx}",
+],
+theme: {
+extend: {},
+},
+plugins: [],
+}
+
+### \***\*Add the Tailwind directives to your CSS\*\***
+
+Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+##### Folder Structure
+
+Create a some Folder
+
+- src
+
+  - components
+  - context
+  - pages
+  - redux
+  - firebase
+
+  ### Create the Route
+
+  npm i react-router-dom
