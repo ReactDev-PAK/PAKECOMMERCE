@@ -12,6 +12,8 @@ import Dashboard from './pages/admin/dashboard/Dashboard';
 import Cart from "./pages/cart/Cart"
 import Mystate from './context/myState';
 import Allproducts from './pages/all products/Allproducts';
+import Login from './pages/registration/Login';
+import Signup from './pages/registration/Signup';
 
 const App = () => {
   return (
@@ -22,8 +24,10 @@ const App = () => {
           < Route path="/order" element={<Order/>}/>
           < Route path="/cart" element={<Cart/>}/>
           < Route path="/dashboard" element={<Dashboard/>}/>
-          < Route path="/*" element={<Nopage/>} />
           < Route path='/allproducts' element={<Allproducts/>}/>
+          < Route path='/login' element={<Login/>} />
+          < Route path="/signup" element={<Signup/>} />
+          < Route path="/*" element={<Nopage/>} />
         </Routes>
       </Router>
     </Mystate>
