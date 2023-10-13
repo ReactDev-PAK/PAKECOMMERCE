@@ -14,6 +14,7 @@ import Mystate from './context/myState';
 import Allproducts from './pages/all products/Allproducts';
 import Login from './pages/registration/Login';
 import Signup from './pages/registration/Signup';
+import ProductInfo from './pages/productInfo/ProductInfo';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           < Route path='/allproducts' element={<Allproducts/>}/>
           < Route path='/login' element={<Login/>} />
           < Route path="/signup" element={<Signup/>} />
+          < Route path="/productinfo/:id" element={<ProductInfo/>} />
           < Route path="/*" element={<Nopage/>} />
         </Routes>
       </Router>
