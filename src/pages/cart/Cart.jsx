@@ -4,15 +4,11 @@ import Layout from '../../components/layout/Layout';
 
 const Cart = () => {
    const context = useContext(MyContext);
-   const {state,color} = context;
-   const {class_name,name,school} = state
 
 
   return (
       <Layout>
-        <>
-          <h1>{class_name}</h1>
-        </>
+          <h1>Cart</h1>
       </Layout>
   )
 }
