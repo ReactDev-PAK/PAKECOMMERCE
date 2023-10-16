@@ -41,3 +41,6 @@ const App = () => {
 }
 
 export default App
+
+
+// Context Api or Redux 

@@ -90,3 +90,6 @@ export default function Modal() {
         </>
     )
 }
+
+
+// Make index.js file in the modal it will access to give reference of the file in the App.js
